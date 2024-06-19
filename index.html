@@ -1,50 +1,129 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./assets/style/style.css">
 </head>
 <body>
+    <nav>
+        <a class="iconea" href="index.html">
+            <aside class="navaside">
+                <H1 style="color: white;">INUTSHELL</H1>
+                <b style="color: wheat;">portifólio</b>
+            </aside>
+        </a>      
+        <ul >
+            <li>
+                <a style="color:#f29559" href="contato.html">CONTATO</a>
+            </li>
+        </ul>
+    </nav>
 
-    <ul>
-        <li>
-            <a href="index.html"> HOME </a>
-        </li>
-        <li>
-            <a href="contato.html">CONTATO</a>
-        </li>
-    </ul>
+    <section class="sobre">
 
-    <section>
-
-        <h1>GALERIA INNUTSHELL</h1>
-
-        <p>
-            is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
-            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled 
-            it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic 
-            typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset 
-            sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker 
-            including versions of Lorem Ipsum.
-        </p>
+        <div>
+            <img class="autorfoto" 
+            src="./assets/img/perfil.jpg" alt="foto do criador">
+        </div>
+        
+        <div class="paragrafo">
+            <div style= "color: #283845;">
+            
+                <h1 style="color:#202c39">GALERIA INUTSHELL</h1>
+                <br><br><br>
+                <p>
+                    is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+                    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled 
+                    it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic 
+                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset 
+                    sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker 
+                    including versions of Lorem Ipsum.
+                </p>
+        </div>
     
-        <img src="" alt="foto do criador">
-
     </section>
 
-    <section>
+    <section class="fundoc">
 
-        <img src="4MENOR-1.jpg" alt="">
-        <a href="cliqueaqui1.html">MAIS DETALHES</a>
-
-        <img src="lobu2.jpg" alt="">
-        <a href="cliqueaqui2.html">MAIS DETALHES</a>
-
-        <img src="MAGO.jpg" alt="">
-        <a href="cliqueaqui3.html">MAIS DETALHES</a>
-
+        <div class="container">
+            <div class="image-container">
+                <a href="cliqueaqui1.html">
+                    <img src="./assets/img/4MENOR-1.jpg" alt="Imagem 1">
+                </a>
+            </div>
+            <div class="image-container">
+                <a href="cliqueaqui2.html">
+                    <img src="./assets/img/lobu2.jpg" alt="Imagem 2">
+                </a>  
+            </div>
+            <div class="image-container">
+                <a href="cliqueaqui3.html">
+                    <img src="./assets/img/MAGO.jpg" alt="Imagem 3">
+                </a> 
+            </div>       
+        </div>
     </section>
 
+    <section class="videoshome" style="color: #202c39;">
+        <aside>
+            <iframe
+            class="videos" 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/ZCfvcxlsIdE?si=HphKNEG7k5Gi34mA" title="YouTube video player"
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+            </iframe>
+
+            <h1>RECOMENDAÇÃO DE TURORIAL</h1>
+        </aside>
+        
+        <aside>
+            <iframe 
+            class="videos" 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/LvzICelxz2c?si=p62Tc13y8Kl401Jw"
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+            </iframe>
+
+            <h1>RECOMENDAÇÃO DE PROCESSO</h1>
+        </aside>
+        
+    </section>
+
+    <footer>
+        <a class="iglogo" href="https://www.instagram.com/inutshell/" 
+        target="_blank">
+            <img src="./assets/img/1384031.png" alt="">
+        </a>
+        <a class="iglogo" href="https://www.twitch.tv/jheyh" 
+        target="_blank">
+            <img src="./assets/img/twitch-logo.png" alt="">
+        </a>
+        <a class="iglogo" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" 
+        target="_blank">
+            <img src="./assets/img/Youtube_logo2.png" alt="">
+        </a>
+    </footer>
+
+    <footer class="direitos" style="color: #ceb09d;">
+        <b>
+            INUTSHELL <br><br>
+            ™&©2024 Inutshell, Inc. Todos os direitos reservados. Inutshell é uma marca<br>
+            registrada e marca a serviço de James Moura,Inc
+        </b>
+    </footer>
 </body>
 </html>
+
