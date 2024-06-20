@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+nav{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 1px;
+    background-color: #202c39;
+    z-index: 1; /* passa o menu a frente de todo resto */
+} 
+
+.botao{
+    padding: 30px;
+}
+
+.botao :hover{
+    padding-bottom: 2vh;
+    border-bottom: 4px solid #f29559;
+}
+
+
+.botao1{
+    padding: 30px;
+}
+
+.iconea{
+    padding: 30px;
+    position: absolute ;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5%;
+}
+
+.navaside h1{
+    position: absolute ;
+    top: 40%;
+    transform: translateY(-50%);
+    left: 5%;
+    display: inline;
+}
+.navaside b{
+    position: absolute ;
+    top: 55%;
+    transform: translateY(-40%);
+    left: 50%;
+    transform: translateX(-25%);
+    display: inline;
+    padding: 0 30px;
+}
+
+ul{
+    align-items: center;
+    list-style: none;
+    display: flex;
+    font-size: 24px;
+    background-color: #202c39;
+    justify-content: right;
+    height: 70px;
+}
+
+a{
+    text-decoration: none;  
+}
+
+.sobre{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    height: 500px;
+    background-color: #dbcaa3;
+}
+
+.paragrafo{
+    font-size: 20px;
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.autorfoto{  
+    top: 50%;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+/* Trecho de código que faz o container expandir as imagens */
+.fundoc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.container {
+    display: flex;
+    height: 90%;
+    width: 90%; /* Largura do container */
+    max-width: 800px; /* Largura máxima do container */
+    overflow: hidden; /* Esconde partes visíveis das imagens */
+}
+
+.image-container {
+
+    flex: 1; /* Ocupa espaço igualmente */
+    overflow: hidden; /* Esconde partes visíveis das imagens */
+    position: relative; /* Permite posicionamento relativo para alinhar as imagens */
+    transition: flex-basis 0.3s ease; /* Transição suave para flex-basis */
+}
+
+.image-container img {
+    width: 500px; /* Largura inicial das imagens */
+    height: auto; /* Altura automática */
+    transition: transform 0.3s ease; /* Transição suave para transform */
+    transform: translateX(-50%); /* Centraliza a imagem horizontalmente */
+    position: relative; /* Mantém a posição relativa para alinhar corretamente */
+    left: 50%; /* Move a imagem para o centro */
+}
+
+.image-container:hover {
+    flex-basis: 35%; /* Aumenta o tamanho do container ao passar o mouse */
+}
+/* TERMINA AQUI */
+
+.videoshome{
+    display: flex;
+    gap: 150px;
+    justify-content: center;
+    background-color: #b8b08d;
+}
+
+aside{
+    display: grid;
+    place-items: center;
+}
+
+.dadosImagem {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.videos{
+    margin: 30px 0 0 0;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    background-color: #283845;
+}
+.iglogo{
+    padding: 25px;
+    align-items: center;
+    display: flex;
+    font-size: 24px;
+    justify-content: center;
+    height: 30px;
+}
+
+.iglogo img{
+    height: 2rem;
+}
+
+.direitos{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    height: 150px;
+    gap: 25px;
+    background-color: #202c39;
+}
+/* ^^^^^^ PAGINA PRINCIPAL ^^^^^^ */
+
+.processomain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.processosec{
+    background-color: #dbcaa3;
+    display: flex;
+    justify-content: space-between;
+}
+
+.processosec img{
+    height: 500px;
+    border-radius: 50%;
+}
+/* ^^^^^^ PAGINA DE PROCESSO ^^^^^^ */
+.ccontato{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ccontato aside{
+    margin: 7px;
+    width: 700px;
+    height: auto;
+    background-color: #dbcaa3;
+}
+
+@media screen and (max-width: 600px){
+    .sobre{
+        height: 50%;
+        flex-direction: column;
+    }
+    .videoshome{
+        gap: 10px;
+        flex-direction: column;
+    }
+    .videoshome aside{
+        gap: 15px;
+    }
+    .videoshome h1{
+        font-size: 14px;
+        margin: 10px;
+    }
+    .videoshome iframe{
+        width: 100%;
+    }
+    .processomain{
+        flex-direction: column;
+    }
+    .processomain img{
+        width: 100%;
+    }
+    .processosec{
+        align-items: center;
+        flex-direction: column;
+    }
+    .processosec img{
+        height: 400px;
+    }
+    .botao :hover{
+        padding-bottom: 19px;
+        border-bottom: 4px solid #f29559;
+    }
+
+    .ccontato{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .ccontato form{
+        width: 50%;
+    }
+    .ccontato iframe{
+        width: 50vh;
+    }
+    .ccontato h3{
+        padding-left: 25%;
+    }
+}
