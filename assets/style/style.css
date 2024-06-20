@@ -13,8 +13,23 @@ nav{
     background-color: #202c39;
     z-index: 1; /* passa o menu a frente de todo resto */
 } 
-    
+
+.botao{
+    padding: 30px;
+}
+
+.botao :hover{
+    padding-bottom: 2vh;
+    border-bottom: 4px solid #f29559;
+}
+
+
+.botao1{
+    padding: 30px;
+}
+
 .iconea{
+    padding: 30px;
     position: absolute ;
     top: 50%;
     transform: translateY(-50%);
@@ -30,10 +45,12 @@ nav{
 }
 .navaside b{
     position: absolute ;
-    top: 70%;
-    transform: translateY(-50%);
+    top: 55%;
+    transform: translateY(-40%);
     left: 50%;
+    transform: translateX(-25%);
     display: inline;
+    padding: 0 30px;
 }
 
 ul{
@@ -47,7 +64,6 @@ ul{
 }
 
 a{
-    padding: 30px;
     text-decoration: none;  
 }
 
@@ -120,7 +136,13 @@ a{
 aside{
     display: grid;
     place-items: center;
-    line-height: 100px;
+}
+
+.dadosImagem {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 2rem;
 }
 
 .videos{
@@ -130,19 +152,21 @@ aside{
 footer{
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 70px;
     background-color: #283845;
 }
 .iglogo{
+    padding: 25px;
     align-items: center;
     display: flex;
     font-size: 24px;
-    justify-content: right;
-    height: 70px;
+    justify-content: center;
+    height: 30px;
 }
 
 .iglogo img{
-    height: 3rem;
+    height: 2rem;
 }
 
 .direitos{
@@ -164,12 +188,11 @@ footer{
 
 .processosec{
     background-color: #dbcaa3;
+    display: flex;
+    justify-content: space-between;
 }
 
 .processosec img{
-
-    left: 50%;
-    transform: translateX(250%);
     height: 500px;
     border-radius: 50%;
 }
@@ -178,7 +201,6 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .ccontato aside{
@@ -186,4 +208,57 @@ footer{
     width: 700px;
     height: auto;
     background-color: #dbcaa3;
+}
+
+@media screen and (max-width: 600px){
+    .sobre{
+        height: 50%;
+        flex-direction: column;
+    }
+    .videoshome{
+        gap: 10px;
+        flex-direction: column;
+    }
+    .videoshome aside{
+        gap: 15px;
+    }
+    .videoshome h1{
+        font-size: 14px;
+        margin: 10px;
+    }
+    .videoshome iframe{
+        width: 100%;
+    }
+    .processomain{
+        flex-direction: column;
+    }
+    .processomain img{
+        width: 100%;
+    }
+    .processosec{
+        align-items: center;
+        flex-direction: column;
+    }
+    .processosec img{
+        height: 400px;
+    }
+    .botao :hover{
+        padding-bottom: 19px;
+        border-bottom: 4px solid #f29559;
+    }
+
+    .ccontato{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .ccontato form{
+        width: 50%;
+    }
+    .ccontato iframe{
+        width: 50vh;
+    }
+    .ccontato h3{
+        padding-left: 25%;
+    }
 }
