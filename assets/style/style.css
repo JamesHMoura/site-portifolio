@@ -210,6 +210,25 @@ footer{
     background-color: #dbcaa3;
 }
 
+.bEnviar{
+    margin: 20px;
+}
+
+input{
+    border-style: none;
+}
+/* Remove a borda bizarra quando clica :D */
+input:focus{
+    outline: none;
+}
+
+textarea{
+    border-style: none;
+}
+textarea:focus{
+    outline: none;
+}
+
 @media screen and (max-width: 600px){
     .sobre{
         height: 50%;
